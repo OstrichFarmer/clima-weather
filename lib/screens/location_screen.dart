@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:clima/utilities/constants.dart';
+import 'package:clima_weather/utilities/constants.dart';
 
 class LocationScreen extends StatefulWidget {
   @override
@@ -47,7 +47,7 @@ class _LocationScreenState extends State<LocationScreen> {
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
                 child: Row(
-                  children: <Widget>[
+                  children: const <Widget>[
                     Text(
                       '32°',
                       style: kTempTextStyle,
