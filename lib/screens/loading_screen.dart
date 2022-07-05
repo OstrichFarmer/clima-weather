@@ -3,10 +3,10 @@ import 'package:geolocator/geolocator.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
-  _LoadingScreenState createState() => _LoadingScreenState();
+  LoadingScreenState createState() => LoadingScreenState();
 }
 
-class _LoadingScreenState extends State<LoadingScreen> {
+class LoadingScreenState extends State<LoadingScreen> {
   void getLocation() async {
     bool serviceEnabled;
     LocationPermission permission;
@@ -38,11 +38,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
       return Future.error(
           'Location permissions are permanently denied, we cannot request permissions.');
     }
-
+    
     Position position = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.low);
 
-    print(position);
+    // print(position);
   }
 
   @override

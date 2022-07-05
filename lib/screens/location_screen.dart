@@ -3,10 +3,10 @@ import 'package:clima_weather/utilities/constants.dart';
 
 class LocationScreen extends StatefulWidget {
   @override
-  _LocationScreenState createState() => _LocationScreenState();
+  LocationScreenState createState() => LocationScreenState();
 }
 
-class _LocationScreenState extends State<LocationScreen> {
+class LocationScreenState extends State<LocationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
